@@ -2,17 +2,16 @@ package com.engeto.entity;
 
 import com.engeto.service.DishService;
 
+import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
-import java.util.HashMap;
-import java.util.Map;
 
 public class Order {
 
     private int orderId;
     private int tableNumber;
 
-    private LocalTime orderTime;
+    private LocalDate orderTime;
     private LocalTime fulfilmentTime;
     private boolean isPaid;
     private int countDish = 1;
@@ -27,7 +26,7 @@ public class Order {
         this.orderId = nextOrderId++;
         this.tableNumber = tableNumber;
         this.dish = dishService.getDishById(dishId);
-        this.orderTime = LocalTime.now();
+        this.orderTime = LocalDate.from(LocalTime.now());
         this.isPaid = false;
         this.countDish = countDish;
     }
@@ -36,7 +35,7 @@ public class Order {
         this.orderId = nextOrderId++;
         this.tableNumber = tableNumber;
         this.dish = dishService.getDishById(dishId);
-        this.orderTime = LocalTime.now();
+        this.orderTime = LocalDate.from(LocalTime.now());
         this.isPaid = false;
         this.countDish = 1;
     }
@@ -52,7 +51,7 @@ public class Order {
     }
 
     public void setOrderTime(LocalTime orderTime) {
-        this.orderTime = orderTime;
+        this.orderTime = LocalDate.from(orderTime);
     }
 
     public void setPaid(boolean paid) {
@@ -84,7 +83,7 @@ public class Order {
         return dish.getIdDish();
     }
 
-    public LocalTime getOrderTime() {
+    public LocalDate getOrderTime() {
         return orderTime;
     }
 

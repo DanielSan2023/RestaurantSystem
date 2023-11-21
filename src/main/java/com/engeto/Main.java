@@ -5,13 +5,15 @@ import com.engeto.entity.Order;
 import com.engeto.exceptions.DishException;
 import com.engeto.service.DishService;
 import com.engeto.service.OrderService;
+import com.engeto.service.RestaurantManager;
 
 import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-DishService dishService = new DishService();
-OrderService orderService =new OrderService();
+        DishService dishService = new DishService();
+        OrderService orderService = new OrderService();
+        RestaurantManager restaurantManager = new RestaurantManager();
 
         //TESTOVACI SCENAR
         //1.Stav evidence z disku:
@@ -23,7 +25,7 @@ OrderService orderService =new OrderService();
 //        }
 //        dishService.printDishes();
 
-                //TODO //2.Připrav testovací data:
+        //2.Připrav testovací data:
         try {
             dishService.addDishObj(new Dish("Kureci rizek obalovany 150g", 6.50));
             dishService.addDishObj(new Dish("Hranolky 150g", 3.50, 15));
@@ -33,31 +35,29 @@ OrderService orderService =new OrderService();
             throw new RuntimeException(e);
         }
         dishService.printDishes();
-        orderService.addOrder(new Order(15, 1, 2,dishService));
-        orderService.addOrder(new Order(15, 2, 2,dishService));
-        orderService.addOrder(new Order(15, 4, 2,dishService));
+        orderService.addOrder(new Order(15, 1, 2, dishService));
+        orderService.addOrder(new Order(15, 2, 2, dishService));
+        orderService.addOrder(new Order(15, 4, 2, dishService));
 
-        orderService.addOrder(new Order(2, 4, 3,dishService));
-        orderService.addOrder(new Order(2, 2, 3,dishService));
-        orderService.addOrder(new Order(2, 3, 3,dishService));
+        orderService.addOrder(new Order(2, 4, 3, dishService));
+        orderService.addOrder(new Order(2, 2, 3, dishService));
+        orderService.addOrder(new Order(2, 3, 3, dishService));
 
-        orderService.printOrdersForTable(15);
 
-        //TODO //3.Celkova cena konzumace pro stul 15:
-        orderService.printTotalDishPriceForTable(15);
+        //3.Celkova cena konzumace pro stul 15:
+        System.out.println("Celkova cena konzumace pro stůl číslo  15: " + orderService.getTotalDishPriceForTable(15) + "€");
 
 
         //TODO //4.Informace pre Management:
+        System.out.println("Počet aktualne rozpracovaných objednávek : " + restaurantManager.getUnpaidOrdersCount(orderService));
+        restaurantManager.getSortedOrdersByOrderTime(orderService)
+                .forEach(order -> System.out.println("Order ID: " + order.getOrderId() + ", Time: " + order.getOrderTime()));
+
 
         //TODO  //5.Uloz data na disk:
 
 
-
-
     }
 
 
-
-
-
-    }
+}

@@ -52,6 +52,12 @@ public class OrderService {
         }
     }
 
+    public double getTotalDishPriceForTable(int tableNumber) {
+        List<Order> orders = getOrdersForTable(tableNumber);
+        return orders.stream()
+                .mapToDouble(Order::totalDishPrice)
+                .sum();
+    }
 
     public void printTotalDishPriceForTable(int tableNumber) {
         List<Order> orders = getOrdersForTable(tableNumber);
@@ -63,11 +69,6 @@ public class OrderService {
                 + tableNumber + " je :" + Math.round(total * 100.0) / 100.0 + "€");
     }
 
-    public double totalDishPrice() {
-
-        double price = order.getCountDish() * order.dish.getPrice();
-        return Math.round(price * 100.0) / 100.0;
-    }
 
     public static String formatTableNumber(int tableNumber) {
         if (tableNumber >= 1 && tableNumber <= 9) {
