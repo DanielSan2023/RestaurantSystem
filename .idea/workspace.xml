@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d97d9ff-23e0-4f54-ad4c-7073af3bf8f2" name="Changes" comment="Init project" />
+    <list default="true" id="1d97d9ff-23e0-4f54-ad4c-7073af3bf8f2" name="Changes" comment="added exceptions">
+      <change afterPath="$PROJECT_DIR$/listDishes.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/engeto/Settings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/engeto/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/engeto/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/engeto/entity/Dish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/engeto/entity/Dish.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/engeto/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/engeto/entity/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/engeto/service/DishService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/engeto/service/DishService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/engeto/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/engeto/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/engeto/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/engeto/Main.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +22,13 @@
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -53,7 +70,21 @@
       <option name="project" value="LOCAL" />
       <updated>1700564644766</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add entity and service classes on project">
+      <created>1700565007511</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1700565007511</updated>
+    </task>
+    <task id="LOCAL-00003" summary="added exceptions">
+      <created>1700565368600</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1700565368600</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -69,6 +100,34 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init project" />
+    <MESSAGE value="add entity and service classes on project" />
+    <MESSAGE value="added exceptions" />
+    <option name="LAST_COMMIT_MESSAGE" value="added exceptions" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/engeto/Main.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/engeto/service/OrderService.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/engeto/entity/Order.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/engeto/entity/Order.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

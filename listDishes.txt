@@ -1,0 +1,12 @@
+1	Kofola malá	2.0	5
+2	Kofola velká	3.0	5
+3	Kuracie nugetky	12.3	28
+4	Kuracie stehienka	14.3	35
+5	Hovadzie na smotane	18.3	35
+6	Pizza Hawai (450g)	9.3	22
+7	Pizza 4 Seasons(600g)	10.3	22
+8	Hydinové guľky v rajčiakovej omáčke	14.3	35
+9	Morčací paprikáš	15.3	28
+10	Hovězí steak	18.99	45
+11	Boloňské špagety(150g)	12.99	30
+12	Sicilske špety	12.54	30

@@ -1,5 +1,6 @@
 package com.engeto.entity;
 
+import com.engeto.Settings;
 import com.engeto.exceptions.DishException;
 
 public class Dish {
@@ -103,5 +104,5 @@ public class Dish {
                 price + Settings.fileItemDelimiter() +
                 preparationTime;
     }
-
+}
 
